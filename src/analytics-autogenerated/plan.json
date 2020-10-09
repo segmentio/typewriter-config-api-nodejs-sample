@@ -25,7 +25,8 @@
 								}
 							},
 							"required": [
-								"category"
+								"category",
+								"subcategory"
 							],
 							"type": "object"
 						},
@@ -129,11 +130,17 @@
 									]
 								}
 							},
+							"required": [
+								"name"
+							],
 							"type": "object"
 						},
 						"traits": {
 						}
 					},
+					"required": [
+						"properties"
+					],
 					"type": "object"
 				},
 				"version": 1
@@ -200,5 +207,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2020-10-09T05:18:22.000Z"
+	"update_time": "2020-10-09T20:15:23.000Z"
 }
