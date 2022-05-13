@@ -1,9 +1,57 @@
 {
 	"create_time": "2020-09-23T17:18:30.000Z",
-	"display_name": "Untitled Tracking Plan",
+	"display_name": "Test Tracking Plan",
 	"name": "workspaces/demo-test-alf/tracking-plans/rs_1hvB6VTmIgOzv7TLSmELbehIXpt",
 	"rules": {
 		"events": [
+			{
+				"name": "event 1",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"labels": {
+					},
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"blah blah": {
+									"description": "",
+									"type": "object"
+								},
+								"prop 2": {
+									"description": "",
+									"enum": [
+										"test1",
+										"tewt2"
+									],
+									"type": "string"
+								},
+								"prop3": {
+									"description": "",
+									"type": "object"
+								},
+								"prop4": {
+									"description": "",
+									"type": "object"
+								}
+							},
+							"required": [
+								"prop3"
+							],
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 1
+			},
 			{
 				"name": "event 1",
 				"rules": {
@@ -46,7 +94,54 @@
 					],
 					"type": "object"
 				},
-				"version": 1
+				"version": 2
+			},
+			{
+				"name": "event 1",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"labels": {
+					},
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"blah blah": {
+									"id": "/properties/properties/properties/blah%20blah"
+								},
+								"prop 2": {
+									"description": "",
+									"id": "/properties/properties/properties/prop%202",
+									"type": "object"
+								},
+								"prop3": {
+									"description": "",
+									"id": "/properties/properties/properties/prop3",
+									"type": "object"
+								},
+								"prop4": {
+									"description": "",
+									"id": "/properties/properties/properties/prop4",
+									"type": "object"
+								}
+							},
+							"required": [
+								"prop3",
+								"prop4"
+							],
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"required": [
+						"properties"
+					],
+					"type": "object"
+				},
+				"version": 3
 			},
 			{
 				"name": "event 3",
@@ -234,5 +329,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2021-04-08T04:53:23.000Z"
+	"update_time": "2022-05-13T00:36:43.000Z"
 }
